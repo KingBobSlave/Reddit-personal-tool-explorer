@@ -1,45 +1,28 @@
 
-This is a small, personal-use project designed to help me learn the Reddit API and experiment with basic API workflows. The tool runs locally on my machine and does not interact with other Reddit users or perform any automated posting.
+This repository contains a small, personal-use project for learning the Reddit API and experimenting with simple read-only requests. The tool runs locally and does not interact with other Reddit users or perform any automated posting.
 
 ## Purpose
 
-The goal of this project is to:
-- Access my own saved posts and comments
-- Organise and filter my personal Reddit data
-- Experiment with API authentication and simple read-only requests
-- Learn how to work with OAuth2 and REST APIs in a safe, low-volume environment
+- Access and organise my own saved posts and comments
+- Learn OAuth2 authentication and API request patterns
+- Explore public subreddit data in a low-volume, compliant way
+- Build small personal scripts for education and experimentation
 
-## What the App Does
+## Features
 
-- Reads **my own account data** (saved posts, comments, upvoted content)
-- Reads **public subreddit data** for educational purposes
-- Stores nothing publicly and does not share data with any third parties
-- Operates at **very low request volume** and follows Reddit API rules
-
-## What the App Does *Not* Do
-
-- No posting, commenting, voting, or messaging
+- Read-only access to my own Reddit data
+- Fetch public subreddit information
+- No posting, voting, messaging, or moderation actions
 - No scraping or high-volume data collection
-- No moderation actions
-- No interaction with other users
-- No commercial use
 
 ## Tech Stack
 
-- Python (or your language of choice)
+- Python 3
+- `requests` for API calls
 - OAuth2 authentication
-- Reddit API (non-Devvit)
+- Local `.env` file for credentials
 
-## Setup (Local Only)
-
-This project is intended for personal use only.  
-To run it locally:
+## Setup
 
 1. Clone the repository  
-2. Add your Reddit API credentials to a local `.env` file  
-3. Run the script to test simple read-only API calls
-
-## Notes
-
-This project is not a bot, not a public tool, and not intended for deployment.  
-It exists solely for personal learning and organisation of my own Reddit data.
+2. Create a `.env` file with:
